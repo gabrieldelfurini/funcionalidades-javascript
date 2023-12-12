@@ -1,8 +1,11 @@
-* {
+*,
+:after,
+::before {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+
 header {
     min-height: 60vh;   
     width: 1120px;  
@@ -33,11 +36,9 @@ header p {
     margin: 40px 0px;
 }
 
-/*Na Parte da Main*/
-
+        /*Na Parte da MAIN*/
 main{
     background-color: #e2e8f0;
-    height: 500px;
 }
 
 main > h2{
@@ -56,28 +57,39 @@ main hr{
     border: 2px solid #f0db51;
 }
 
-/*Primeiro Projeto: Gerador de Cores*/
-section.gerador-de-cores{
-    height: 100vh;
+/* Definido layout de todos os projetos */
+section.projetos{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 100vh; 
 }
 
-div.explicacao1{
+div.explicacao{
     /* background-color: red; */
-    /* width: calc(100vw / 3); */
-    width: 30%;
-    padding-left: 60px;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-section.gerador-de-cores h2{
-    font-family: "Inconsolata",monospace;
-    font-size: 2rem;
-    font-weight: 100;
-}
-
-section.gerador-de-cores p{
+div.explicacao p{
     color: #0f172a;
     font-family: "Montserrat",sans-serif;
-    font-size: 1.25rem;
-    line-height: 35px;
-    margin: 40px 0px;
+    font-size: 1.2rem;
+    line-height: 30px;
+    margin: 20px 0px;
+    text-align: justify;
 }
+
+
+div.explicacao h2{
+    color: #0f172a;
+    font-size: 2rem;
+    font-family: "Inconsolata",monospace;
+    font-weight: normal;
+    text-align: center;
+}
+
+
+
+        /*PRIMEIRO PROJETO: Gerador de Cores - ARQUIVO SEPARADO*/
