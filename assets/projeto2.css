@@ -10,7 +10,6 @@ Fonts
 Variables
 ===============
 */
-
 :root {
   /* dark shades of primary color*/
   --clr-primary-1: hsl(205, 86%, 17%);
@@ -59,8 +58,7 @@ Global Styles
 ===============
 */
 
-
-.projeto1 {
+.contador .body {
   font-family: var(--ff-secondary);
   background: var(--clr-grey-10);
   color: var(--clr-grey-1);
@@ -68,69 +66,63 @@ Global Styles
   font-size: 0.875rem;
 }
 
-.projeto1 ul {
+.contador ul {
   list-style-type: none;
 }
-.projeto1 a {
+.contador a {
   text-decoration: none;
 }
-
-.projeto1 h1,
-.projeto1 h2,
-.projeto1 h3,
-.projeto1 h4 {
+.contador h1,
+.contador h2,
+.contador h3,
+.contador h4 {
   letter-spacing: var(--spacing);
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
   font-family: var(--ff-primary);
 }
-
-.projeto1 h1 {
+.contador h1 {
   font-size: 3rem;
 }
-.projeto1 h2 {
+.contador h2 {
   font-size: 2rem;
 }
-.projeto1 h3 {
+.contador h3 {
   font-size: 1.25rem;
 }
-.projeto1 h4 {
+.contador h4 {
   font-size: 0.875rem;
 }
-.projeto1 p {
+.contador p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
-
-
 @media screen and (min-width: 800px) {
-  .projeto1 h1 {
+  .contador h1 {
     font-size: 4rem;
   }
-  .projeto1 h2 {
+  .contador h2 {
     font-size: 2.5rem;
   }
-  .projeto1 h3 {
+  .contador h3 {
     font-size: 1.75rem;
   }
-  .projeto1 h4 {
+  .contador h4 {
     font-size: 1rem;
   }
-  body {
+  .contador .body {
     font-size: 1rem;
   }
-  .projeto1 h1,
-  .projeto1 h2,
-  .projeto1 h3,
-  .projeto1 h4 {
+  .contador h1,
+  .contador h2,
+  .contador h3,
+  .contador h4 {
     line-height: 1;
   }
 }
-/*  global classes */
 
-
-.projeto1 div.main {
+.contador .main {
   min-height: 100%;
   display: grid;
   place-items: center;
@@ -138,83 +130,33 @@ Global Styles
 
 /*
 =============== 
-Nav
+Contador
 ===============
 */
-.projeto1 div.nav {
-  background: var(--clr-white);
-  height: 3rem;
-  display: grid;
-  align-items: center;
-  box-shadow: var(--dark-shadow);
-}
-.projeto1 div.nav .nav-center {
-  width: 90%;
-  max-width: var(--fixed-width);
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.projeto1 div.nav .nav-center h4 {
-  margin-bottom: 0;
-  color: var(--clr-primary-5);
-}
-.projeto1 div.nav .nav-links {
-  display: flex;
-}
-.projeto1 div.nav a {
-  text-transform: capitalize;
-  font-weight: 700;
-  font-size: 1rem;
-  color: var(--clr-primary-1);
-  letter-spacing: var(--spacing);
-  margin-right: 1rem;
-  cursor: pointer;
-}
-.projeto1 div.nav a:hover {
-  color: var(--clr-primary-5);
-}
-/*
-=============== 
-Container
-===============
-*/
-.projeto1 div.main {
-  min-height: calc(100% - 3rem);
-  display: grid;
-  place-items: center;
-}
-.projeto1 div.main .container {
+
+.contador .container {
   text-align: center;
 }
-.projeto1 div.main .container h2 {
-  background: var(--clr-black);
-  color: var(--clr-white);
-  padding: 1rem;
-  border-radius: var(--radius);
-  margin-bottom: 2.5rem;
+.contador #value {
+  font-size: 6rem;
+  font-weight: bold;
 }
-.projeto1 .color {
-  color: var(--clr-primary-5);
-}
-.projeto1 .btn-hero {
-  font-family: var(--ff-primary);
+.contador .btn {
   text-transform: uppercase;
   background: transparent;
   color: var(--clr-black);
+  padding: 0.375rem 0.75rem;
   letter-spacing: var(--spacing);
   display: inline-block;
-  font-weight: 700;
   transition: var(--transition);
+  font-size: 0.875rem;
   border: 2px solid var(--clr-black);
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
-  font-size: 1rem;
-  padding: 0.75rem 1.25rem;
+  margin: 0.5rem;
 }
-.projeto1 .btn-hero:hover {
+.contador .btn:hover {
   color: var(--clr-white);
   background: var(--clr-black);
 }
