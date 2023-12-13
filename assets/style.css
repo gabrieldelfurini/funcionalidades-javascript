@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+  }  
+
 header {
     min-height: 60vh;   
     width: 1120px;  
@@ -35,6 +39,40 @@ header p {
     line-height: 35px;
     margin: 40px 0px;
 }
+
+
+        /*Na Parte do SUMÁRIO*/
+
+.sumario{
+    width: 1120px;  
+    margin: auto;
+}  
+
+.sumario h2{
+    color: #0f172a;
+    font-size: 2.5rem;
+    font-family: "Inconsolata",monospace;
+    font-weight: normal;
+    line-height: 2;
+}
+
+.sumario ul li{
+    font-family: "Montserrat",sans-serif;
+    font-size: 1rem;
+    line-height: 30px;
+}
+
+.sumario a{
+    text-decoration: none;
+    color: #0f172a;
+}
+
+.sumario a:hover{
+    color: var(--clr-primary-5);
+    text-decoration: underline;
+}
+
+
 
         /*Na Parte da MAIN*/
 main{
