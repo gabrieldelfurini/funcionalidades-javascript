@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="stylesheet" href="/assets/projeto1.css">
     <link rel="stylesheet" href="assets/projeto2.css">
+    <link rel="stylesheet" href="assets/projeto3.css">
     <title>Aprendendo JavaScript</title>
 </head>
 <body>
@@ -20,6 +21,7 @@
     <main>
         <h2>Projetos DOM</h2>
         <hr>
+
 
         <!-- Aqui vou colocar um SUMARIO -->
 
@@ -48,14 +50,11 @@
             </div>
         </section>
 
-
-
         <section class="contador projetos">
             <div class="explicacao">
                 <h2>Contador</h2>   
                 <p>O projeto é um simples contador implementado em HTML, CSS e JavaScript. Um número centralizado na tela é ajustado por três botões abaixo: um para decrementar o número, outro para zerá-lo e um terceiro para incrementá-lo. Essa interface interativa permite manipular o valor exibido de forma intuitiva.</p>
             </div>
-
             <div class="body">
                 <div class="main">
                     <div class="container">
@@ -69,6 +68,51 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+
+        <section class="reviews projetos">
+            <div class="explicacao">
+                <h2>Reviews</h2>   
+                <p>O projeto apresenta um painel de avaliações com a exibição central de uma pessoa e sua respectiva review. Três botões abaixo permitem navegar entre as avaliações, avançando ou retrocedendo, e um terceiro botão exibe aleatoriamente uma review na tela, proporcionando uma experiência dinâmica.</p>
+            </div>
+
+            <div class="body">
+                <div class="main">
+                    <section class="container">
+                      <!-- title -->
+                      <div class="title">
+                        <h2>our reviews</h2>
+                        <div class="underline"></div>
+                      </div>
+                      <!-- review -->
+                      <article class="review">
+                        <div class="img-container">
+                          <img src="assets/person-1.jpeg" id="person-img" alt="" />
+                        </div>
+                        <h4 id="author">sara jones</h4>
+                        <p id="job">ux designer</p>
+                        <p id="info">
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                          asperiores debitis incidunt, eius earum ipsam cupiditate libero?
+                          Iste, doloremque nihil?
+                        </p>
+                        <!-- prev next buttons-->
+                        <div class="button-container">
+                          <button class="prev-btn">
+                            <i class="fas fa-chevron-left"></i>
+                          </button>
+                          <button class="next-btn">
+                            <i class="fas fa-chevron-right"></i>
+                          </button>
+                        </div>
+                        <!-- random button -->
+                        <button class="random-btn">surprise me</button>
+                      </article>
+                    </section>
+                  </div>
+            </div>
+
         </section>
             
     </main>
