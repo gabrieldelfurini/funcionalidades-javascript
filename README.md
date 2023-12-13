@@ -1,3 +1,3 @@
 # funcionalidades-javascript
 Projeto com algumas funcionalidades "especiais" usando JS
-<br>(Projeto em andamento)
+<br><br><strong>(Projeto em andamento)</strong>
