@@ -185,7 +185,7 @@ Reviews
   border-radius: 50%;
   transform: translateY(25%);
   background: var(--clr-primary-5);
-  color: var(--clr-white);
+  color: var(--clr-white);  
 }
 .reviews .img-container::before {
   content: "";
