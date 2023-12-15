@@ -37,6 +37,3 @@ function gerarCoresHexadecimais(){
 document.addEventListener('DOMContentLoaded', gerarCoresSimples); // Deixa como padrão essa função, logo quando a pagina é carregada 
 document.querySelector('a.simples').addEventListener("click", gerarCoresSimples)
 document.querySelector('a.hex').addEventListener("click", gerarCoresHexadecimais)
-
-
-
