@@ -50,7 +50,6 @@ const reviews = [
   // show person based on item
   function showPerson() {
     const item = reviews[currentItem];
-    console.log(item)
 
     img.src = item.img;
     author.textContent = item.name;
