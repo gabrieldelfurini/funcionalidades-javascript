@@ -1,137 +1,233 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/style.css">
-    <link rel="stylesheet" href="/assets/projeto1.css">
-    <link rel="stylesheet" href="assets/projeto2.css">
-    <link rel="stylesheet" href="assets/projeto3.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <link rel="stylesheet" href="/assets/projeto1.css" />
+    <link rel="stylesheet" href="assets/projeto2.css" />
+    <link rel="stylesheet" href="assets/projeto3.css" />
+    <link rel="stylesheet" href="assets/projeto4.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
 
     <title>Aprendendo JavaScript</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="introducao">
-            <h1>Projetos Javascript</h1>
-            <p>Projetos são uma das <i>melhores formas de aprender</i> alguma linguagem de programação. Abaixo estão algumas "<span style="text-decoration: underline; text-decoration-color: #f0db51; font-weight: bold; font-style: italic;">funcionalidades especiais</span>" que criei usando JavaScript.</p>
-        </div>
-        <img src="/assets/imagemSite.svg" alt="">
+      <div class="introducao">
+        <h1>Projetos Javascript</h1>
+        <p>
+          Projetos são uma das <i>melhores formas de aprender</i> alguma
+          linguagem de programação. Abaixo estão algumas "<span
+            style="
+              text-decoration: underline;
+              text-decoration-color: #f0db51;
+              font-weight: bold;
+              font-style: italic;
+            "
+            >funcionalidades especiais</span
+          >" que criei usando JavaScript.
+        </p>
+      </div>
+      <img src="/assets/imagemSite.svg" alt="" />
     </header>
-    
+
     <main>
-        <h2>Projetos DOM</h2>
-        <hr>
+      <h2>Projetos DOM</h2>
+      <hr />
 
+      <!-- Aqui vou colocar um SUMARIO -->
+      <section class="sumario">
+        <h2>Sumário</h2>
 
-        <!-- Aqui vou colocar um SUMARIO -->
-        <section class="sumario">
-          <h2>Sumário</h2>
+        <ul>
+          <li><a href="#projeto-geradorCores">Projeto Gerador de Cores</a></li>
+          <li><a href="#projeto-contador">Projeto Contador</a></li>
+          <li><a href="#projeto-reviews">Projeto Reviews</a></li>
+        </ul>
+      </section>
 
-          <ul>
-            <li><a href="#projeto-geradorCores">Projeto Gerador de Cores</a></li>
-            <li><a href="#projeto-reviews">Projeto Reviews</a></li>
-            <li><a href="#projeto-contador">Projeto Contador</a></li>
-          </ul>
-  
-        </section>
-
-
-        <section class="gerador-de-cores projetos" id="projeto-geradorCores">
-            <div class="explicacao">
-                <h2>Gerador de cores</h2>
-                <p>Este projeto consiste em um botão que, ao ser clicado, gera um novo código hexadecimal e altera dinamicamente a cor de fundo da página para corresponder ao código gerado.</p>    
+      <section class="gerador-de-cores projetos" id="projeto-geradorCores">
+        <div class="explicacao">
+          <h2>Gerador de cores</h2>
+          <p>
+            Este projeto consiste em um botão que, ao ser clicado, gera um novo
+            código hexadecimal e altera dinamicamente a cor de fundo da página
+            para corresponder ao código gerado.
+          </p>
+        </div>
+        <div class="projeto1">
+          <div class="nav">
+            <div class="nav-center">
+              <h4>color flipper</h4>
+              <ul class="nav-links">
+                <li><a class="simples">simple</a></li>
+                <li><a class="hex">hex</a></li>
+              </ul>
             </div>
-            <div class="projeto1">
-                <div class="nav">
-                    <div class="nav-center">
-                      <h4>color flipper</h4>
-                      <ul class="nav-links">
-                        <li><a class="simples">simple</a></li>
-                        <li><a class="hex">hex</a></li>
-                      </ul>
-                    </div>
+          </div>
+          <div class="main">
+            <div class="container">
+              <h2>background color : <span class="color">#f1f5f8</span></h2>
+              <button class="btn btn-hero" id="btn">click me</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contador projetos" id="projeto-contador">
+        <div class="explicacao">
+          <h2>Contador</h2>
+          <p>
+            O projeto é um simples contador implementado em HTML, CSS e
+            JavaScript. Um número centralizado na tela é ajustado por três
+            botões abaixo: um para decrementar o número, outro para zerá-lo e um
+            terceiro para incrementá-lo. Essa interface interativa permite
+            manipular o valor exibido de forma intuitiva.
+          </p>
+        </div>
+        <div class="body">
+          <div class="main">
+            <div class="container">
+              <h1>contador</h1>
+              <span id="value">0</span>
+              <div class="button-container">
+                <button class="btn decrease">decrease</button>
+                <button class="btn reset">reset</button>
+                <button class="btn increase">increase</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews projetos" id="projeto-reviews">
+        <div class="explicacao">
+          <h2>Reviews</h2>
+          <p>
+            O projeto apresenta um painel de avaliações com a exibição central
+            de uma pessoa e sua respectiva review. Três botões abaixo permitem
+            navegar entre as avaliações, avançando ou retrocedendo, e um
+            terceiro botão exibe aleatoriamente uma review na tela,
+            proporcionando uma experiência dinâmica.
+          </p>
+        </div>
+
+        <div class="body">
+          <div class="main">
+            <section class="container">
+              <!-- title -->
+              <div class="title">
+                <h2>our reviews</h2>
+                <div class="underline"></div>
+              </div>
+              <!-- review -->
+              <article class="review">
+                <div class="img-container">
+                  <img src="assets/person-1.jpeg" id="person-img" alt="" />
                 </div>
-                <div class="main">
-                    <div class="container">
-                      <h2>background color : <span class="color">#f1f5f8</span></h2>
-                      <button class="btn btn-hero" id="btn">click me</button>
-                    </div>
+                <h4 id="author">sara jones</h4>
+                <p id="job">ux designer</p>
+                <p id="info">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+                  asperiores debitis incidunt, eius earum ipsam cupiditate
+                  libero? Iste, doloremque nihil?
+                </p>
+                <!-- prev next buttons-->
+                <div class="button-container">
+                  <button class="prev-btn">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button class="next-btn">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
                 </div>
-            </div>
-        </section>
+                <!-- random button -->
+                <button class="random-btn">surprise me</button>
+              </article>
+            </section>
+          </div>
+        </div>
+      </section>
 
-        <section class="contador projetos" id="projeto-contador">
-            <div class="explicacao">
-                <h2>Contador</h2>   
-                <p>O projeto é um simples contador implementado em HTML, CSS e JavaScript. Um número centralizado na tela é ajustado por três botões abaixo: um para decrementar o número, outro para zerá-lo e um terceiro para incrementá-lo. Essa interface interativa permite manipular o valor exibido de forma intuitiva.</p>
+      <section class="navbar projetos" id="projeto-reviews">
+        <div class="explicacao">
+          <h2>NavBar</h2>
+          <p>
+            O projeto é uma barra de navegação responsiva com um menu
+            "hamburguer". Ao reduzir o tamanho da tela, a barra de navegação
+            transforma-se em um ícone de menu, proporcionando uma experiência
+            amigável para dispositivos móveis e mantendo a usabilidade em
+            diferentes tamanhos de tela.
+          </p>
+        </div>
+
+        <div class="body">
+          <div class="nav">
+            <div class="nav-center">
+              <!-- nav header -->
+              <div class="nav-header">
+                <img src="./assets/logo.svg" class="logo" alt="logo" />
+                <button class="nav-toggle">
+                  <i class="fas fa-bars"></i>
+                </button>
+              </div>
+              <!-- links -->
+              <ul class="links">
+                <li>
+                  <a href="index.html">home</a>
+                </li>
+                <li>
+                  <a href="about.html">about</a>
+                </li>
+                <li>
+                  <a href="projects.html">projects</a>
+                </li>
+                <li>
+                  <a href="contact.html">contact</a>
+                </li>
+              </ul>
+              <!-- social media -->
+              <ul class="social-icons">
+                <li>
+                  <a href="https://www.twitter.com">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com">
+                    <i class="fab fa-behance"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com">
+                    <i class="fab fa-sketch"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="body">
-                <div class="main">
-                    <div class="container">
-                      <h1>contador</h1>
-                      <span id="value">0</span>
-                      <div class="button-container">
-                        <button class="btn decrease">decrease</button>
-                        <button class="btn reset">reset</button>
-                        <button class="btn increase">increase</button>
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+          </div>
+        </div>
 
 
-        <section class="reviews projetos" id="projeto-reviews">
-            <div class="explicacao">
-                <h2>Reviews</h2>   
-                <p>O projeto apresenta um painel de avaliações com a exibição central de uma pessoa e sua respectiva review. Três botões abaixo permitem navegar entre as avaliações, avançando ou retrocedendo, e um terceiro botão exibe aleatoriamente uma review na tela, proporcionando uma experiência dinâmica.</p>
-            </div>
-
-            <div class="body">
-                <div class="main">
-                    <section class="container">
-                      <!-- title -->
-                      <div class="title">
-                        <h2>our reviews</h2>
-                        <div class="underline"></div>
-                      </div>
-                      <!-- review -->
-                      <article class="review">
-                        <div class="img-container">
-                          <img src="assets/person-1.jpeg" id="person-img" alt="" />
-                        </div>
-                        <h4 id="author">sara jones</h4>
-                        <p id="job">ux designer</p>
-                        <p id="info">
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
-                          asperiores debitis incidunt, eius earum ipsam cupiditate libero?
-                          Iste, doloremque nihil?
-                        </p>
-                        <!-- prev next buttons-->
-                        <div class="button-container">
-                          <button class="prev-btn">
-                            <i class="fas fa-chevron-left"></i>
-                          </button>
-                          <button class="next-btn">
-                            <i class="fas fa-chevron-right"></i>
-                          </button>
-                        </div>
-                        <!-- random button -->
-                        <button class="random-btn">surprise me</button>
-                      </article>
-                    </section>
-                  </div>
-            </div>
-
-        </section>
-            
+      </section>
     </main>
     <!-- JavaScript -->
     <script src="assets/projeto1.js"></script>
     <script src="assets/projeto2.js"></script>
     <script src="assets/projeto3.js"></script>
-    
-</body>
+  </body>
 </html>
