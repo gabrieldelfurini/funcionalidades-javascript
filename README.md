@@ -24,11 +24,10 @@ A aplicação deve ter as seguintes funcionalidades:
 # Sumário
 
 - [Tecnologias utilizadas](#tecnologias-utilizadas)
-- [Pré-requisitos](#pré-requisitos)
-  - [Ferramentas necessárias](#ferramentas-necessárias)
-  - [Rodando no servidor local](#rodando-no-servidor-local)
+- [Ferramentas necessárias](#ferramentas-necessárias)
+- [Rodando no servidor local](#rodando-no-servidor-local)
 - [Orientações de como utilizar](#orientações-de-como-utilizar)
-- - [Habilidades desenvolvidas](#habilidades-desenvolvidas)
+- [Habilidades desenvolvidas](#habilidades-desenvolvidas)
 
   ---
 
@@ -46,20 +45,17 @@ A aplicação deve ter as seguintes funcionalidades:
 
 ---
 
-# Pré-requisitos
+# Como utilizar
 
 ## Ferramentas necessárias
 
-Para rodar o projeto, você vai precisar instalar as seguintes ferramentas:
-[XAMPP](https://www.apachefriends.org/pt_br/index.html);
-* MySQL <br>
-* PHP <br>
-* Apache <br>
+ * Para rodar o projeto, você vai precisar instalar as seguintes ferramentas:
+[XAMPP](https://www.apachefriends.org/pt_br/index.html) (que vai trazer alguns programas como o PHP)
 * Um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/) ou outro de sua preferência;
 
  ## Rodando no servidor local
 
-- Dentro do painel do "Xampp":
+- Dentro do painel do "XAMPP":
   - Clicar em "start", tanto no "Apache" quanto no "MySQL". Que deverá ficar assim:
   - (imagem)
 
@@ -70,50 +66,25 @@ Para rodar o projeto, você vai precisar instalar as seguintes ferramentas:
     
     - Configure o Banco de Dados
   - No terminal do XAMPP aperte no botão "Admin" na coluna da opção "MySQL";
-  - Dentro do phpMyAdmin, crie uma tabela com o nome que desejar;
-  - Dentro da pasta "backend" acesse o arquivo ".env", e renomeie o valo de "DB_DATABASE" passando o nome daquele que você criou;
+  - Dentro do phpMyAdmin, crie uma base de dados com o nome que desejar;
+  - Dentro da pasta "backend" acesse o arquivo ".env", e renomeie o valor de "DB_DATABASE" passando o nome daquele que você criou;
   - (./imagem/bancoDeDados.png) 
     
  - Inicie o sistema:
 
-    - Inicie o backend
+    - Inicie o backend:
     cd backend && php artisan serve
 
-    - Em outro terminal, inicie o frontend
-
+    - Em outro terminal, inicie o frontend:
     cd frontend && npm start
 
     Abra no navegador os links que aparecem nos dois terminais. Eles devem ser algo como "http://localhost/..."
 
 ---
 
-# Orientações de como utilizar
+  # Um pouco sobre minha experiência
+Foi um grande desafio pra mim, já que eu nunca tinha entrado em contato com PHP, Laravel e Vue.js. Eu já tinha visto alguns conteúdos sobre essas tecnologias mas nada algo muito profundo como foi nesse projeto. Tive que me organizar de forma a poder conseguir estudar o básico para conseguir pelo menos entregar um projeto funcional. Então dividi meus 3 primeiros dias para estudar as tecnologias que não conhecia profundamente (separei um dia pra cada). E depois foquei no desenvolvimento do projeto mesmo, pesquisando bastante até encontrar a solução de um problema que havia encontrado, ou para poder terminar alguma funcionalidade que não tinha muita noção de como implementar.
 
-A aplicação WEB possui três telas, e é possível navegar por elas através da barra de navegação.
-Os botões RECEITAS, INGREDIENTES e CRIAÇÃO DE RECEITA navegam por essas três telas. 
+Eu já escutei que as principais habilidades de um programador são: resolução de problemas, criatividade, comunicação e resiliência. Acho que pude provar pra mim mesmo que eu possuo essas habilidades, além de poder ter melhorado elas durante esse projeto; porque como falei, foi um dos maiores desafios que já fiz em relação à programação. Mas eu também fico animado porque penso no que eu posso fazer, tendo em vista esse desafio que terminei (saindo praticamente do zero), nesse pouco período de tempo. 
 
-A primeira tela a ser preenchida pelo usuário é a de ingredientes, onde serão cadastrados os ingredientes utilizados na fabricação das farinhas. Para isso, basta digitar o código e a descrição do ingrediente e clicar no botão de adicionar.
-Para editar um ingrediente basta clicar no botão do lápis, os campos de edição aparecem na mesma linha da tabela. Para excluir um ingrediente, basta clicar no botão da lixeira. A imagem abaixo ilustra a tela de cadastro de ingredientes:
-
-  ![Cadastro de ingredientes](./imagens/ingredientes.png)
-
-Em seguida, para criar uma nova receita, clique no botão CRIAÇÃO DE RECEITA na barra de navegação. Aqui o usuário pode selecionar os ingredientes e a quantidade em kg a ser adicionada na receita. Para salvar a receita no banco de dados, o código e a descrição da receita devem ser preenchidos. A figura abaixo ilustra a tela de criação de receitas:
-  ![Criação de receitas](./imagens/criacao_de_receita.png)
-
-Por fim, para gerenciar todas as receitas criadas, basta clicar no botão RECEITAS. Nessa tela, alem de ser possivel criar uma receita nova, cada receita possui um botão para editar e outro para excluir a mesma. A figura abaixo ilustra a tela de visualização de receitas:
-  ![Visualização da lista de receitas](./imagens/receitas.png)
-
----
-
-  # Habilidades desenvolvidas
-
-- Criação do backend com express e typescript
-- Teste das rotas utilizando Postman
-- Integração com mysql utilizando Prisma ORM
-- Desenvolvimento de telas com React, javascript e hooks
-- Criação, leitura, edição e exclusão (CRUD) de ingredientes
-- CRUD de receitas com ingredientes cadastrados
-- Estilização e responsividade com Tailwindcss
-
----
-
+E também queria agradecer pela oportunidade de participar desse processo.
